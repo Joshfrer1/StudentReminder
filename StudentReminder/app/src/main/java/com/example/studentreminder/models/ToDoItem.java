@@ -7,7 +7,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class ToDoItem {
     @PrimaryKey(autoGenerate = true)
-    public int id;
+    public long id;
     @ColumnInfo
     public String title;
     @ColumnInfo(name = "due_date")
@@ -20,4 +20,6 @@ public class ToDoItem {
     public int categoryId;
     @ColumnInfo(name = "is_canvas_item")
     public boolean isCanvasItem;
+    @ColumnInfo(name = "is_completed")
+    public boolean isCompleted;
 }

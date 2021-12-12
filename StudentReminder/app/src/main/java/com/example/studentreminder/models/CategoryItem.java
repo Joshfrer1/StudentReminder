@@ -6,7 +6,7 @@ import androidx.room.PrimaryKey;
 @Entity
 public class CategoryItem {
     @PrimaryKey(autoGenerate = true)
-    public int id;
+    public long id;
     @ColumnInfo
     public String category;
     @ColumnInfo
