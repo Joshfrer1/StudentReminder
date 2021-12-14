@@ -7,6 +7,7 @@ import androidx.room.Update;
 
 import com.example.studentreminder.models.CategoryItem;
 
+import java.util.ArrayList;
 import java.util.List;
 
 @Dao
