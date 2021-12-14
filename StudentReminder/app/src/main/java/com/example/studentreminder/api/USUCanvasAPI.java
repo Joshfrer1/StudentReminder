@@ -9,10 +9,11 @@ import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.canvasuistarter.R;
-import com.example.canvasuistarter.api.models.Course;
-import com.example.canvasuistarter.api.models.UpcomingEvent;
-import com.example.canvasuistarter.api.models.User;
+import com.example.studentreminder.R;
+import com.example.studentreminder.models.User;
+import com.example.studentreminder.models.UpcomingEvent;
+import com.example.studentreminder.models.Course;
+
 
 
 import org.json.JSONArray;
@@ -35,9 +36,9 @@ public class USUCanvasAPI {
     private String token;
     private static USUCanvasAPI instance;
 
-    public static USUCanvasAPI getInstance(Context context) {
+    public static USUCanvasAPI getInstance(Context context, User user) {
         if (instance == null) {
-            instance = new USUCanvasAPI(context, context.getResources().getString(R.string.canvas_token));
+            instance = new USUCanvasAPI(context, user.token);
         }
         return instance;
     }
@@ -62,7 +63,7 @@ public class USUCanvasAPI {
                         User[] users = new User[1];
                         User user = new User();
                         try {
-                            user.id = (int)response.get("id");
+                            user.canvasId = (int)response.get("id");
                             user.name = response.getString("name");
                         } catch (JSONException e) {
                             onRequestCompleteListener.onComplete(null, e.toString());

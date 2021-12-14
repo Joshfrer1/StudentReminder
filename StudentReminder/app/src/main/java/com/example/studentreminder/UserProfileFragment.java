@@ -1,2 +1,5 @@
-package com.example.studentreminder;public class user_profile_fragment {
+package com.example.studentreminder;
+
+public class UserProfileFragment {
+
 }
