@@ -36,9 +36,9 @@ public class USUCanvasAPI {
     private String token;
     private static USUCanvasAPI instance;
 
-    public static USUCanvasAPI getInstance(Context context, User user) {
+    public static USUCanvasAPI getInstance(Context context, String token) {
         if (instance == null) {
-            instance = new USUCanvasAPI(context, user.token);
+            instance = new USUCanvasAPI(context, token);
         }
         return instance;
     }

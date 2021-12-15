@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         toolbar.setNavigationOnClickListener(view -> {
-            drawerLayout.open();
+            drawerLayout.openDrawer(view);
         });
 
 
