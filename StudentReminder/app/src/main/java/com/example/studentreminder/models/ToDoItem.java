@@ -11,15 +11,15 @@ public class ToDoItem {
     @ColumnInfo
     public String title;
     @ColumnInfo(name = "due_date")
-    public long dueDate;
+    public String dueDate;
     @ColumnInfo(name = "remind_date")
-    public long remindDate;
+    public String remindDate;
     @ColumnInfo
     public String reoccur;
     @ColumnInfo(name = "category_id")
     public int categoryId;
-    @ColumnInfo(name = "is_canvas_item")
-    public boolean isCanvasItem;
+    @ColumnInfo(name = "canvas_id")
+    public int canvasId;
     @ColumnInfo(name = "is_completed")
     public boolean isCompleted;
 }

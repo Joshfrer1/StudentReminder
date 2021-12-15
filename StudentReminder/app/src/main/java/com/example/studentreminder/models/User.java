@@ -4,7 +4,7 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 @Entity
 public class User {
-    @PrimaryKey
+    @PrimaryKey(autoGenerate = true)
     public long id;
     @ColumnInfo
     public int canvasId;

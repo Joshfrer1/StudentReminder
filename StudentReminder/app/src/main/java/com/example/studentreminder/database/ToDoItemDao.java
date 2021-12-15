@@ -19,7 +19,7 @@ public interface ToDoItemDao {
     public List<ToDoItem> getAll();
     @Query("select * from todoitem where id = :id")
     public ToDoItem findById(long id);
-    @Query("select * from todoitem where is_canvas_item = 1")
+    @Query("select * from todoitem where canvas_id <> null")
     public List<ToDoItem> getCanvasItems();
 
 

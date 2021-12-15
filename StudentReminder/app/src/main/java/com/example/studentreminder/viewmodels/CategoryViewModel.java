@@ -38,6 +38,7 @@ public class CategoryViewModel extends AndroidViewModel {
             category.category = title;
             category.colour = colour;
             category.id = database.getCategoryItemDao().insert(category);
+            categories.add(category);
             saving.postValue(false);
         }).start();
     }
@@ -53,6 +54,7 @@ public class CategoryViewModel extends AndroidViewModel {
     public void deleteCategory(CategoryItem item){
         new Thread(() ->{
             database.getCategoryItemDao().delete(item);
+            categories.remove(item);
         }).start();
     }
 

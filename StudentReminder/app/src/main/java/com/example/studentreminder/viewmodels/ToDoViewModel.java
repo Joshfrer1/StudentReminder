@@ -39,7 +39,7 @@ public class ToDoViewModel extends AndroidViewModel {
         return saving;
     }
 
-    public void saveNewToDoItem(String title, long dueDate, long remindDate, String reoccur, boolean isCanvasItem){
+    public void saveNewToDoItem(String title, String dueDate, String remindDate, String reoccur, int canvasId){
         saving.setValue(true);
         new Thread(() ->{
             ToDoItem item = new ToDoItem();
@@ -47,13 +47,14 @@ public class ToDoViewModel extends AndroidViewModel {
             item.dueDate = dueDate;
             item.remindDate = remindDate;
             item.reoccur = reoccur;
-            item.isCanvasItem = isCanvasItem;
+            item.canvasId = canvasId;
             item.isCompleted = false;
             item.id = database.getToDoItemDao().insert(item);
+            toDoList.add(item);
             saving.postValue(false);
         }).start();
     }
-    public void saveNewToDoItem(String title, long dueDate, long remindDate, String reoccur, boolean isCanvasItem, int categoryId){
+    public void saveNewToDoItem(String title, String dueDate, String remindDate, String reoccur, int canvasId, int categoryId){
         saving.setValue(true);
         new Thread(() ->{
             ToDoItem item = new ToDoItem();
@@ -62,9 +63,10 @@ public class ToDoViewModel extends AndroidViewModel {
             item.remindDate = remindDate;
             item.reoccur = reoccur;
             item.categoryId = categoryId;
-            item.isCanvasItem = isCanvasItem;
+            item.canvasId = canvasId;
             item.isCompleted = false;
             item.id = database.getToDoItemDao().insert(item);
+            toDoList.add(item);
             saving.postValue(false);
         }).start();
 
@@ -81,14 +83,27 @@ public class ToDoViewModel extends AndroidViewModel {
     public void deleteToDoItem(ToDoItem item){
         new Thread(() -> {
             database.getToDoItemDao().deleteItem(item);
+            toDoList.remove(item);
         }).start();
     }
 
-    public void getToDos(){
+    public void getToDoList(){
         new Thread(() -> {
             ArrayList<ToDoItem> toDos = new ArrayList<>();
             toDos = (ArrayList<ToDoItem>) database.getToDoItemDao().getAll();
             toDoList.addAll(toDos);
+        }).start();
+    }
+
+    public void deleteCanvasItems(){
+        saving.setValue(true);
+        new Thread(() -> {
+            ArrayList<ToDoItem> items = (ArrayList<ToDoItem>) database.getToDoItemDao().getCanvasItems();
+            for(ToDoItem item: items){
+                database.getToDoItemDao().deleteItem(item);
+                toDoList.remove(item);
+            }
+            saving.postValue(false);
         }).start();
     }
 }
