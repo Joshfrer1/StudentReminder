@@ -10,7 +10,6 @@ import com.android.volley.toolbox.JsonArrayRequest;
 import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
 import com.example.studentreminder.R;
-import com.example.studentreminder.models.ToDoItem;
 import com.example.studentreminder.models.User;
 import com.example.studentreminder.models.UpcomingEvent;
 import com.example.studentreminder.models.Course;
@@ -86,7 +85,7 @@ public class USUCanvasAPI {
         queue.add(jsonObjectRequest);
     }
 
-    public void getUpcomingEvents(OnRequestCompleteListener<ToDoItem> onRequestCompleteListener) {
+    public void getUpcomingEvents(OnRequestCompleteListener<UpcomingEvent> onRequestCompleteListener) {
         JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(
                 Request.Method.GET,
                 "https://usu.instructure.com/api/v1/users/self/upcoming_events?per_page=1&access_token=" + token,
@@ -94,15 +93,13 @@ public class USUCanvasAPI {
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-                        ToDoItem[] events = new ToDoItem[response.length()];
+                        UpcomingEvent[] events = new UpcomingEvent[response.length()];
                         for(int i=0; i<response.length(); i++) {
                             try {
                                 JSONObject obj = response.getJSONObject(i);
-                                ToDoItem item = new ToDoItem();
-                                item.title = obj.getString("title");
-                                item.dueDate = obj.getString("due_at");
-                                item.canvasId = (int)obj.get("id");
-                                events[i] = item;
+                                UpcomingEvent event = new UpcomingEvent();
+                                event.title = obj.getString("title");
+                                events[i] = event;
                             } catch (JSONException e) {
                                 onRequestCompleteListener.onComplete(null, e.toString());
                                 e.printStackTrace();

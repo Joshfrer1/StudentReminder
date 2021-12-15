@@ -1,2 +1,4 @@
-package com.example.studentreminder;public class upcoming_events_fragment {
+package com.example.studentreminder;
+
+public class UpcomingEventsFragment {
 }

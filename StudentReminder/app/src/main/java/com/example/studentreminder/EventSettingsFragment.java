@@ -1,2 +1,5 @@
-package com.example.studentreminder;public class EventSettingsFragment {
+package com.example.studentreminder;
+
+
+public class EventSettingsFragment {
 }
