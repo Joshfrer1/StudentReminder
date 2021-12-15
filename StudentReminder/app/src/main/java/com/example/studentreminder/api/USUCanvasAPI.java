@@ -36,9 +36,9 @@ public class USUCanvasAPI {
     private String token;
     private static USUCanvasAPI instance;
 
-    public static USUCanvasAPI getInstance(Context context, User user) {
+    public static USUCanvasAPI getInstance(Context context) {
         if (instance == null) {
-            instance = new USUCanvasAPI(context, user.token);
+            instance = new USUCanvasAPI(context, context.getResources().getString(R.string.canvas_token));
         }
         return instance;
     }
@@ -113,41 +113,6 @@ public class USUCanvasAPI {
             public void onErrorResponse(VolleyError error) {
                 // TODO: Handle error
                 onRequestCompleteListener.onComplete(null, error.toString());
-                error.printStackTrace();
-
-            }
-        });
-
-        queue.add(jsonObjectRequest);
-    }
-
-    public void getCourses(OnRequestCompleteListener<Course> onRequestCompleteListener) {
-        JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(
-                Request.Method.GET,
-                "https://usu.instructure.com/api/v1/courses?enrollment_state=active&access_token=" + token,
-                null,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        Course[] courses = new Course[response.length()];
-                        for(int i=0; i<response.length(); i++) {
-                            try {
-                                JSONObject obj = response.getJSONObject(i);
-                                Course course = new Course();
-                                course.id = obj.getInt("id");
-                                course.name = obj.getString("name");
-                                courses[i] = course;
-                            } catch (JSONException e) {
-                                onRequestCompleteListener.onComplete(null, e.toString());
-                                e.printStackTrace();
-                            }
-                        }
-                        onRequestCompleteListener.onComplete(courses, null);
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                // TODO: Handle error
                 error.printStackTrace();
 
             }
