@@ -16,12 +16,10 @@ com/example/studentreminder/models/CategoryItem.java
  com.example.studentreminder.models.CategoryItem
 com/example/studentreminder/database/CategoryItemDao.java
  com.example.studentreminder.database.CategoryItemDao
-com/example/studentreminder/UpcomingEventsFragment.java
- com.example.studentreminder.UpcomingEventsFragment
- com.example.studentreminder.UpcomingEventsFragment$1
-com/example/studentreminder/UpcomingEventsAdapter.java
- com.example.studentreminder.UpcomingEventsAdapter
- com.example.studentreminder.UpcomingEventsAdapter$ViewHolder
+com/example/studentreminder/viewmodels/UserViewModel.java
+ com.example.studentreminder.viewmodels.UserViewModel
+com/example/studentreminder/database/AppDatabase.java
+ com.example.studentreminder.database.AppDatabase
 com/example/studentreminder/DataBindingTriggerClass.java
  com.example.studentreminder.DataBindingTriggerClass
 com/example/studentreminder/UserProfileFragment.java
@@ -43,7 +41,9 @@ com/example/studentreminder/viewmodels/CategoryViewModel.java
  com.example.studentreminder.viewmodels.CategoryViewModel
 com/example/studentreminder/viewmodels/ToDoViewModel.java
  com.example.studentreminder.viewmodels.ToDoViewModel
-com/example/studentreminder/database/AppDatabase.java
- com.example.studentreminder.database.AppDatabase
-com/example/studentreminder/viewmodels/UserViewModel.java
- com.example.studentreminder.viewmodels.UserViewModel
+com/example/studentreminder/UpcomingEventsFragment.java
+ com.example.studentreminder.UpcomingEventsFragment
+ com.example.studentreminder.UpcomingEventsFragment$1
+com/example/studentreminder/UpcomingEventsAdapter.java
+ com.example.studentreminder.UpcomingEventsAdapter
+ com.example.studentreminder.UpcomingEventsAdapter$ViewHolder

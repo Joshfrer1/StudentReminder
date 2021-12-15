@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
+ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.databinding:databinding-adapters:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\804f5cef2c8055f0399a1981ab0eea6e\transformed\databinding-adapters-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-runtime:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\0c04245b2da26fe59610149e702f545f\transformed\databinding-runtime-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\joshf\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
@@ -52,25 +52,29 @@ MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\User
 MERGED from [androidx.print:print:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\998ecad2e598076d0444e5b886cc28b2\transformed\print-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\511e2a36f18b29fdf3f425e3962668f8\transformed\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.1.0] C:\Users\joshf\.gradle\caches\transforms-3\abd986d958258d7e8503cbe4ed7e75cb\transformed\jetified-annotation-experimental-1.1.0\AndroidManifest.xml:17:1-24:12
-INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
-INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
 	package
 		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-23:12
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
 		INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:11-69
+uses-permission#android.permission.INTERNET
+ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:4:5-66
+	android:name
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:5:5-21:19
+ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:6:5-22:19
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\joshf\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\joshf\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\joshf\.gradle\caches\transforms-3\763fcd2e0284e5e571bdcc51d674f4ec\transformed\constraintlayout-2.1.1\AndroidManifest.xml:9:5-20
@@ -84,33 +88,33 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\jo
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.5.0] C:\Users\joshf\.gradle\caches\transforms-3\97e7ec19bd11dff7ae3d399ac9d0fa5b\transformed\core-1.5.0\AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:10:9-35
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:11:9-35
 	android:label
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:8:9-41
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:9:9-41
 	android:roundIcon
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:9:9-54
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:10:9-54
 	android:icon
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:7:9-43
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:6:9-35
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:7:9-35
 	android:theme
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:11:9-53
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:12:9-53
 activity#com.example.studentreminder.MainActivity
-ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:12:9-20:20
+ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:13:9-21:20
 	android:exported
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:14:13-36
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:15:13-36
 	android:name
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:13:13-41
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:14:13-41
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:15:13-19:29
+ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:16:13-20:29
 action#android.intent.action.MAIN
-ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:16:17-69
+ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:17:17-69
 	android:name
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:16:25-66
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:17:25-66
 category#android.intent.category.LAUNCHER
-ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:18:17-77
+ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:19:17-77
 	android:name
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:18:27-74
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:19:27-74
 uses-sdk
 INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml
