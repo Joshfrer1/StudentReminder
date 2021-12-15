@@ -2045,9 +2045,7 @@ int id group_divider 0x7f0800cd
 int id grouping 0x7f0800ce
 int id groups 0x7f0800cf
 int id guideline 0x7f0800d0
-int id header_image 0x7f0800d1
 int id header_title 0x7f0800d2
-int id header_user 0x7f0800d3
 int id hideable 0x7f0800d4
 int id home 0x7f0800d5
 int id homeAsUp 0x7f0800d6

@@ -2046,9 +2046,7 @@ id group_divider
 id grouping
 id groups
 id guideline
-id header_image
 id header_title
-id header_user
 id hideable
 id home
 id homeAsUp
