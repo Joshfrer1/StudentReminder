@@ -13,10 +13,6 @@ import android.os.PersistableBundle;
 import android.view.MenuInflater;
 import android.widget.TextView;
 
-import com.example.studentreminder.api.USUCanvasAPI;
-import com.example.studentreminder.models.Course;
-import com.example.studentreminder.models.UpcomingEvent;
-import com.example.studentreminder.models.User;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -28,9 +24,18 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        if (savedInstanceState == null) {
+            getSupportFragmentManager().beginTransaction()
+                    .setReorderingAllowed(true)
+                    .add(R.id.fragment_container, UpcomingEventsFragment.class, null)
+                    .commit();
+        }
+
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         MaterialToolbar toolbar = findViewById(R.id.top_app_bar);
         NavigationView navigationView = findViewById(R.id.navigation_view);
+
+
 
 
 
