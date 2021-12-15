@@ -76,6 +76,7 @@ public class ToDoViewModel extends AndroidViewModel {
         saving.setValue(true);
         new Thread(() -> {
             database.getToDoItemDao().update(item);
+
             saving.postValue(false);
         }).start();
     }
@@ -105,5 +106,10 @@ public class ToDoViewModel extends AndroidViewModel {
             }
             saving.postValue(false);
         }).start();
+    }
+
+    public void deleteCurrentItem(){
+        deleteToDoItem(currentItem.getValue());
+        currentItem.setValue(null);
     }
 }
