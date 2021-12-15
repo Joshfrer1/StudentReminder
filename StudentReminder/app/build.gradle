@@ -52,7 +52,7 @@ dependencies {
 
     //drawer layout
     implementation "androidx.drawerlayout:drawerlayout:1.1.1"
-    
+
 
     // ViewModel
     implementation "androidx.lifecycle:lifecycle-viewmodel:$lifecycle_version"

@@ -32,7 +32,7 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
     this.__insertionAdapterOfToDoItem = new EntityInsertionAdapter<ToDoItem>(__db) {
       @Override
       public String createQuery() {
-        return "INSERT OR ABORT INTO `ToDoItem` (`id`,`title`,`due_date`,`remind_date`,`reoccur`,`category_id`,`is_canvas_item`,`is_completed`) VALUES (nullif(?, 0),?,?,?,?,?,?,?)";
+        return "INSERT OR ABORT INTO `ToDoItem` (`id`,`title`,`due_date`,`remind_date`,`reoccur`,`category_id`,`canvas_id`,`is_completed`) VALUES (nullif(?, 0),?,?,?,?,?,?,?)";
       }
 
       @Override
@@ -43,20 +43,26 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
         } else {
           stmt.bindString(2, value.title);
         }
-        stmt.bindLong(3, value.dueDate);
-        stmt.bindLong(4, value.remindDate);
+        if (value.dueDate == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.dueDate);
+        }
+        if (value.remindDate == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.remindDate);
+        }
         if (value.reoccur == null) {
           stmt.bindNull(5);
         } else {
           stmt.bindString(5, value.reoccur);
         }
         stmt.bindLong(6, value.categoryId);
+        stmt.bindLong(7, value.canvasId);
         final int _tmp;
-        _tmp = value.isCanvasItem ? 1 : 0;
-        stmt.bindLong(7, _tmp);
-        final int _tmp_1;
-        _tmp_1 = value.isCompleted ? 1 : 0;
-        stmt.bindLong(8, _tmp_1);
+        _tmp = value.isCompleted ? 1 : 0;
+        stmt.bindLong(8, _tmp);
       }
     };
     this.__deletionAdapterOfToDoItem = new EntityDeletionOrUpdateAdapter<ToDoItem>(__db) {
@@ -73,7 +79,7 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
     this.__updateAdapterOfToDoItem = new EntityDeletionOrUpdateAdapter<ToDoItem>(__db) {
       @Override
       public String createQuery() {
-        return "UPDATE OR ABORT `ToDoItem` SET `id` = ?,`title` = ?,`due_date` = ?,`remind_date` = ?,`reoccur` = ?,`category_id` = ?,`is_canvas_item` = ?,`is_completed` = ? WHERE `id` = ?";
+        return "UPDATE OR ABORT `ToDoItem` SET `id` = ?,`title` = ?,`due_date` = ?,`remind_date` = ?,`reoccur` = ?,`category_id` = ?,`canvas_id` = ?,`is_completed` = ? WHERE `id` = ?";
       }
 
       @Override
@@ -84,20 +90,26 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
         } else {
           stmt.bindString(2, value.title);
         }
-        stmt.bindLong(3, value.dueDate);
-        stmt.bindLong(4, value.remindDate);
+        if (value.dueDate == null) {
+          stmt.bindNull(3);
+        } else {
+          stmt.bindString(3, value.dueDate);
+        }
+        if (value.remindDate == null) {
+          stmt.bindNull(4);
+        } else {
+          stmt.bindString(4, value.remindDate);
+        }
         if (value.reoccur == null) {
           stmt.bindNull(5);
         } else {
           stmt.bindString(5, value.reoccur);
         }
         stmt.bindLong(6, value.categoryId);
+        stmt.bindLong(7, value.canvasId);
         final int _tmp;
-        _tmp = value.isCanvasItem ? 1 : 0;
-        stmt.bindLong(7, _tmp);
-        final int _tmp_1;
-        _tmp_1 = value.isCompleted ? 1 : 0;
-        stmt.bindLong(8, _tmp_1);
+        _tmp = value.isCompleted ? 1 : 0;
+        stmt.bindLong(8, _tmp);
         stmt.bindLong(9, value.id);
       }
     };
@@ -153,7 +165,7 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
       final int _cursorIndexOfRemindDate = CursorUtil.getColumnIndexOrThrow(_cursor, "remind_date");
       final int _cursorIndexOfReoccur = CursorUtil.getColumnIndexOrThrow(_cursor, "reoccur");
       final int _cursorIndexOfCategoryId = CursorUtil.getColumnIndexOrThrow(_cursor, "category_id");
-      final int _cursorIndexOfIsCanvasItem = CursorUtil.getColumnIndexOrThrow(_cursor, "is_canvas_item");
+      final int _cursorIndexOfCanvasId = CursorUtil.getColumnIndexOrThrow(_cursor, "canvas_id");
       final int _cursorIndexOfIsCompleted = CursorUtil.getColumnIndexOrThrow(_cursor, "is_completed");
       final List<ToDoItem> _result = new ArrayList<ToDoItem>(_cursor.getCount());
       while(_cursor.moveToNext()) {
@@ -165,20 +177,26 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
         } else {
           _item.title = _cursor.getString(_cursorIndexOfTitle);
         }
-        _item.dueDate = _cursor.getLong(_cursorIndexOfDueDate);
-        _item.remindDate = _cursor.getLong(_cursorIndexOfRemindDate);
+        if (_cursor.isNull(_cursorIndexOfDueDate)) {
+          _item.dueDate = null;
+        } else {
+          _item.dueDate = _cursor.getString(_cursorIndexOfDueDate);
+        }
+        if (_cursor.isNull(_cursorIndexOfRemindDate)) {
+          _item.remindDate = null;
+        } else {
+          _item.remindDate = _cursor.getString(_cursorIndexOfRemindDate);
+        }
         if (_cursor.isNull(_cursorIndexOfReoccur)) {
           _item.reoccur = null;
         } else {
           _item.reoccur = _cursor.getString(_cursorIndexOfReoccur);
         }
         _item.categoryId = _cursor.getInt(_cursorIndexOfCategoryId);
+        _item.canvasId = _cursor.getInt(_cursorIndexOfCanvasId);
         final int _tmp;
-        _tmp = _cursor.getInt(_cursorIndexOfIsCanvasItem);
-        _item.isCanvasItem = _tmp != 0;
-        final int _tmp_1;
-        _tmp_1 = _cursor.getInt(_cursorIndexOfIsCompleted);
-        _item.isCompleted = _tmp_1 != 0;
+        _tmp = _cursor.getInt(_cursorIndexOfIsCompleted);
+        _item.isCompleted = _tmp != 0;
         _result.add(_item);
       }
       return _result;
@@ -203,7 +221,7 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
       final int _cursorIndexOfRemindDate = CursorUtil.getColumnIndexOrThrow(_cursor, "remind_date");
       final int _cursorIndexOfReoccur = CursorUtil.getColumnIndexOrThrow(_cursor, "reoccur");
       final int _cursorIndexOfCategoryId = CursorUtil.getColumnIndexOrThrow(_cursor, "category_id");
-      final int _cursorIndexOfIsCanvasItem = CursorUtil.getColumnIndexOrThrow(_cursor, "is_canvas_item");
+      final int _cursorIndexOfCanvasId = CursorUtil.getColumnIndexOrThrow(_cursor, "canvas_id");
       final int _cursorIndexOfIsCompleted = CursorUtil.getColumnIndexOrThrow(_cursor, "is_completed");
       final ToDoItem _result;
       if(_cursor.moveToFirst()) {
@@ -214,20 +232,26 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
         } else {
           _result.title = _cursor.getString(_cursorIndexOfTitle);
         }
-        _result.dueDate = _cursor.getLong(_cursorIndexOfDueDate);
-        _result.remindDate = _cursor.getLong(_cursorIndexOfRemindDate);
+        if (_cursor.isNull(_cursorIndexOfDueDate)) {
+          _result.dueDate = null;
+        } else {
+          _result.dueDate = _cursor.getString(_cursorIndexOfDueDate);
+        }
+        if (_cursor.isNull(_cursorIndexOfRemindDate)) {
+          _result.remindDate = null;
+        } else {
+          _result.remindDate = _cursor.getString(_cursorIndexOfRemindDate);
+        }
         if (_cursor.isNull(_cursorIndexOfReoccur)) {
           _result.reoccur = null;
         } else {
           _result.reoccur = _cursor.getString(_cursorIndexOfReoccur);
         }
         _result.categoryId = _cursor.getInt(_cursorIndexOfCategoryId);
+        _result.canvasId = _cursor.getInt(_cursorIndexOfCanvasId);
         final int _tmp;
-        _tmp = _cursor.getInt(_cursorIndexOfIsCanvasItem);
-        _result.isCanvasItem = _tmp != 0;
-        final int _tmp_1;
-        _tmp_1 = _cursor.getInt(_cursorIndexOfIsCompleted);
-        _result.isCompleted = _tmp_1 != 0;
+        _tmp = _cursor.getInt(_cursorIndexOfIsCompleted);
+        _result.isCompleted = _tmp != 0;
       } else {
         _result = null;
       }
@@ -240,7 +264,7 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
 
   @Override
   public List<ToDoItem> getCanvasItems() {
-    final String _sql = "select * from todoitem where is_canvas_item = 1";
+    final String _sql = "select * from todoitem where canvas_id <> null";
     final RoomSQLiteQuery _statement = RoomSQLiteQuery.acquire(_sql, 0);
     __db.assertNotSuspendingTransaction();
     final Cursor _cursor = DBUtil.query(__db, _statement, false, null);
@@ -251,7 +275,7 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
       final int _cursorIndexOfRemindDate = CursorUtil.getColumnIndexOrThrow(_cursor, "remind_date");
       final int _cursorIndexOfReoccur = CursorUtil.getColumnIndexOrThrow(_cursor, "reoccur");
       final int _cursorIndexOfCategoryId = CursorUtil.getColumnIndexOrThrow(_cursor, "category_id");
-      final int _cursorIndexOfIsCanvasItem = CursorUtil.getColumnIndexOrThrow(_cursor, "is_canvas_item");
+      final int _cursorIndexOfCanvasId = CursorUtil.getColumnIndexOrThrow(_cursor, "canvas_id");
       final int _cursorIndexOfIsCompleted = CursorUtil.getColumnIndexOrThrow(_cursor, "is_completed");
       final List<ToDoItem> _result = new ArrayList<ToDoItem>(_cursor.getCount());
       while(_cursor.moveToNext()) {
@@ -263,20 +287,26 @@ public final class ToDoItemDao_Impl implements ToDoItemDao {
         } else {
           _item.title = _cursor.getString(_cursorIndexOfTitle);
         }
-        _item.dueDate = _cursor.getLong(_cursorIndexOfDueDate);
-        _item.remindDate = _cursor.getLong(_cursorIndexOfRemindDate);
+        if (_cursor.isNull(_cursorIndexOfDueDate)) {
+          _item.dueDate = null;
+        } else {
+          _item.dueDate = _cursor.getString(_cursorIndexOfDueDate);
+        }
+        if (_cursor.isNull(_cursorIndexOfRemindDate)) {
+          _item.remindDate = null;
+        } else {
+          _item.remindDate = _cursor.getString(_cursorIndexOfRemindDate);
+        }
         if (_cursor.isNull(_cursorIndexOfReoccur)) {
           _item.reoccur = null;
         } else {
           _item.reoccur = _cursor.getString(_cursorIndexOfReoccur);
         }
         _item.categoryId = _cursor.getInt(_cursorIndexOfCategoryId);
+        _item.canvasId = _cursor.getInt(_cursorIndexOfCanvasId);
         final int _tmp;
-        _tmp = _cursor.getInt(_cursorIndexOfIsCanvasItem);
-        _item.isCanvasItem = _tmp != 0;
-        final int _tmp_1;
-        _tmp_1 = _cursor.getInt(_cursorIndexOfIsCompleted);
-        _item.isCompleted = _tmp_1 != 0;
+        _tmp = _cursor.getInt(_cursorIndexOfIsCompleted);
+        _item.isCompleted = _tmp != 0;
         _result.add(_item);
       }
       return _result;

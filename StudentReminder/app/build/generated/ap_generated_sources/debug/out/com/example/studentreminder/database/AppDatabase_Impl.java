@@ -30,21 +30,25 @@ public final class AppDatabase_Impl extends AppDatabase {
 
   private volatile CategoryItemDao _categoryItemDao;
 
+  private volatile UserDao _userDao;
+
   @Override
   protected SupportSQLiteOpenHelper createOpenHelper(DatabaseConfiguration configuration) {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `ToDoItem` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `due_date` INTEGER NOT NULL, `remind_date` INTEGER NOT NULL, `reoccur` TEXT, `category_id` INTEGER NOT NULL, `is_canvas_item` INTEGER NOT NULL, `is_completed` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `ToDoItem` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `due_date` TEXT, `remind_date` TEXT, `reoccur` TEXT, `category_id` INTEGER NOT NULL, `canvas_id` INTEGER NOT NULL, `is_completed` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `CategoryItem` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `category` TEXT, `colour` TEXT)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `User` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `canvasId` INTEGER NOT NULL, `name` TEXT, `token` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '2b7502da97543f49aeefe6d77d46aa00')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fa47fb8892d4c377e5548ecd019fac97')");
       }
 
       @Override
       public void dropAllTables(SupportSQLiteDatabase _db) {
         _db.execSQL("DROP TABLE IF EXISTS `ToDoItem`");
         _db.execSQL("DROP TABLE IF EXISTS `CategoryItem`");
+        _db.execSQL("DROP TABLE IF EXISTS `User`");
         if (mCallbacks != null) {
           for (int _i = 0, _size = mCallbacks.size(); _i < _size; _i++) {
             mCallbacks.get(_i).onDestructiveMigration(_db);
@@ -86,11 +90,11 @@ public final class AppDatabase_Impl extends AppDatabase {
         final HashMap<String, TableInfo.Column> _columnsToDoItem = new HashMap<String, TableInfo.Column>(8);
         _columnsToDoItem.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsToDoItem.put("title", new TableInfo.Column("title", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("due_date", new TableInfo.Column("due_date", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("remind_date", new TableInfo.Column("remind_date", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsToDoItem.put("due_date", new TableInfo.Column("due_date", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsToDoItem.put("remind_date", new TableInfo.Column("remind_date", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsToDoItem.put("reoccur", new TableInfo.Column("reoccur", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsToDoItem.put("category_id", new TableInfo.Column("category_id", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("is_canvas_item", new TableInfo.Column("is_canvas_item", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsToDoItem.put("canvas_id", new TableInfo.Column("canvas_id", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsToDoItem.put("is_completed", new TableInfo.Column("is_completed", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysToDoItem = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesToDoItem = new HashSet<TableInfo.Index>(0);
@@ -114,9 +118,23 @@ public final class AppDatabase_Impl extends AppDatabase {
                   + " Expected:\n" + _infoCategoryItem + "\n"
                   + " Found:\n" + _existingCategoryItem);
         }
+        final HashMap<String, TableInfo.Column> _columnsUser = new HashMap<String, TableInfo.Column>(4);
+        _columnsUser.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsUser.put("canvasId", new TableInfo.Column("canvasId", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsUser.put("name", new TableInfo.Column("name", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        _columnsUser.put("token", new TableInfo.Column("token", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
+        final HashSet<TableInfo.ForeignKey> _foreignKeysUser = new HashSet<TableInfo.ForeignKey>(0);
+        final HashSet<TableInfo.Index> _indicesUser = new HashSet<TableInfo.Index>(0);
+        final TableInfo _infoUser = new TableInfo("User", _columnsUser, _foreignKeysUser, _indicesUser);
+        final TableInfo _existingUser = TableInfo.read(_db, "User");
+        if (! _infoUser.equals(_existingUser)) {
+          return new RoomOpenHelper.ValidationResult(false, "User(com.example.studentreminder.models.User).\n"
+                  + " Expected:\n" + _infoUser + "\n"
+                  + " Found:\n" + _existingUser);
+        }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "2b7502da97543f49aeefe6d77d46aa00", "68141ec7153a64cbbe8b982c5478a87e");
+    }, "fa47fb8892d4c377e5548ecd019fac97", "4056f0b591e9fbfec3b96d39788fd7aa");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)
@@ -129,7 +147,7 @@ public final class AppDatabase_Impl extends AppDatabase {
   protected InvalidationTracker createInvalidationTracker() {
     final HashMap<String, String> _shadowTablesMap = new HashMap<String, String>(0);
     HashMap<String, Set<String>> _viewTables = new HashMap<String, Set<String>>(0);
-    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "ToDoItem","CategoryItem");
+    return new InvalidationTracker(this, _shadowTablesMap, _viewTables, "ToDoItem","CategoryItem","User");
   }
 
   @Override
@@ -140,6 +158,7 @@ public final class AppDatabase_Impl extends AppDatabase {
       super.beginTransaction();
       _db.execSQL("DELETE FROM `ToDoItem`");
       _db.execSQL("DELETE FROM `CategoryItem`");
+      _db.execSQL("DELETE FROM `User`");
       super.setTransactionSuccessful();
     } finally {
       super.endTransaction();
@@ -155,6 +174,7 @@ public final class AppDatabase_Impl extends AppDatabase {
     final HashMap<Class<?>, List<Class<?>>> _typeConvertersMap = new HashMap<Class<?>, List<Class<?>>>();
     _typeConvertersMap.put(ToDoItemDao.class, ToDoItemDao_Impl.getRequiredConverters());
     _typeConvertersMap.put(CategoryItemDao.class, CategoryItemDao_Impl.getRequiredConverters());
+    _typeConvertersMap.put(UserDao.class, UserDao_Impl.getRequiredConverters());
     return _typeConvertersMap;
   }
 
@@ -182,6 +202,20 @@ public final class AppDatabase_Impl extends AppDatabase {
           _categoryItemDao = new CategoryItemDao_Impl(this);
         }
         return _categoryItemDao;
+      }
+    }
+  }
+
+  @Override
+  public UserDao getUserDao() {
+    if (_userDao != null) {
+      return _userDao;
+    } else {
+      synchronized(this) {
+        if(_userDao == null) {
+          _userDao = new UserDao_Impl(this);
+        }
+        return _userDao;
       }
     }
   }
