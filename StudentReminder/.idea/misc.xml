@@ -3,6 +3,13 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/header_navigation_drawer.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/home.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/new_category.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/upcoming_events.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/upcoming_events_list_item.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/menu/navigation_menu.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/app/src/main/res/layout/activity_main.xml" value="0.16259057971014493" />
       </map>
     </option>
