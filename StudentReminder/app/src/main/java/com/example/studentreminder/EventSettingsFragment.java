@@ -1,5 +1,7 @@
 package com.example.studentreminder;
 
 
-public class EventSettingsFragment {
+import androidx.fragment.app.Fragment;
+
+public class EventSettingsFragment extends Fragment {
 }

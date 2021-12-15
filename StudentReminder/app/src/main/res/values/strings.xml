@@ -1,4 +1,4 @@
 <resources>
     <string name="app_name">StudentReminder</string>
-    <string name="db_name">appdb</string>
+
 </resources>
