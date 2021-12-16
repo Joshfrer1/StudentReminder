@@ -6,16 +6,18 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.databinding.ObservableArrayList;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.studentreminder.models.ToDoItem;
 import com.example.studentreminder.models.UpcomingEvent;
 
 
 public class UpcomingEventsAdapter extends RecyclerView.Adapter<UpcomingEventsAdapter.ViewHolder> {
 
-    private UpcomingEvent[] upcomingEvents;
-    public UpcomingEventsAdapter(UpcomingEvent[] upcomingEvents) {
-        this.upcomingEvents = upcomingEvents;
+    private ObservableArrayList<ToDoItem> items;
+    public UpcomingEventsAdapter(ObservableArrayList<ToDoItem> items) {
+        this.items = items;
     }
 
 
@@ -34,13 +36,13 @@ public class UpcomingEventsAdapter extends RecyclerView.Adapter<UpcomingEventsAd
 
     @Override
     public void onBindViewHolder(@NonNull UpcomingEventsAdapter.ViewHolder holder, int position) {
-        UpcomingEvent upcomingEvent = upcomingEvents[position];
+        ToDoItem item = items.get(position);
         TextView title = holder.itemView.findViewById(R.id.event_title);
-        title.setText(upcomingEvent.title);
+        title.setText(item.title);
     }
 
     @Override
     public int getItemCount() {
-        return upcomingEvents.length;
+        return items.size();
     }
 }

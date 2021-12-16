@@ -54,13 +54,18 @@ public class UserViewModel extends AndroidViewModel {
         }).start();
     }
 
-    public void getUser(){
+    private void setUser(){
         saving.setValue(true);
         new Thread(() ->{
             User user = database.getUserDao().getUser();
             currentUser.postValue(user);
             saving.postValue(false);
         }).start();
+    }
+
+    public MutableLiveData<User> getUser(){
+        setUser();
+        return currentUser;
     }
 
 

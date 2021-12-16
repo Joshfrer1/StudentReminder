@@ -50,7 +50,6 @@ public class ToDoViewModel extends AndroidViewModel {
             item.canvasId = canvasId;
             item.isCompleted = false;
             item.id = database.getToDoItemDao().insert(item);
-            toDoList.add(item);
             saving.postValue(false);
         }).start();
     }
@@ -66,7 +65,6 @@ public class ToDoViewModel extends AndroidViewModel {
             item.canvasId = canvasId;
             item.isCompleted = false;
             item.id = database.getToDoItemDao().insert(item);
-            toDoList.add(item);
             saving.postValue(false);
         }).start();
 
@@ -87,7 +85,7 @@ public class ToDoViewModel extends AndroidViewModel {
         }).start();
     }
 
-    public void getToDoList(){
+    private void getToDoList(){
         new Thread(() -> {
             ArrayList<ToDoItem> toDos = new ArrayList<>();
             toDos = (ArrayList<ToDoItem>) database.getToDoItemDao().getAll();
@@ -110,5 +108,10 @@ public class ToDoViewModel extends AndroidViewModel {
     public void deleteCurrentItem(){
         deleteToDoItem(currentItem.getValue());
         currentItem.setValue(null);
+    }
+
+    public ObservableArrayList<ToDoItem> getFullList(){
+        getToDoList();
+        return toDoList;
     }
 }
