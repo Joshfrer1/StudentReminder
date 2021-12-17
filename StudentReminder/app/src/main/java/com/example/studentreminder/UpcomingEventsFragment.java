@@ -8,6 +8,8 @@ import androidx.annotation.Nullable;
 import androidx.databinding.ObservableArrayList;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.MutableLiveData;
+import androidx.lifecycle.ViewModel;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -27,8 +29,8 @@ public class UpcomingEventsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView eventRecyclerView = view.findViewById(R.id.event_recycler_view);
         eventRecyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        ToDoViewModel toDoViewModel = new ToDoViewModel(getActivity().getApplication());
-        UserViewModel userViewModel = new UserViewModel(getActivity().getApplication());
+        ToDoViewModel toDoViewModel = new ViewModelProvider(getActivity()).get(ToDoViewModel.class);
+        UserViewModel userViewModel = new ViewModelProvider(getActivity()).get(UserViewModel.class);
 
         userViewModel.getUser().observe(getViewLifecycleOwner(), (currentUser) ->{
 

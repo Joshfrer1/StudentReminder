@@ -25,6 +25,7 @@ public class CategoryViewModel extends AndroidViewModel {
         super(application);
         database = Room.databaseBuilder(application, AppDatabase.class, application.getString(R.string.db_name)).build();
         saving.setValue(false);
+        setCategories();
     }
 
     public MutableLiveData<Boolean> getSaving() {
@@ -67,7 +68,6 @@ public class CategoryViewModel extends AndroidViewModel {
     }
 
     public ObservableArrayList<CategoryItem> getCategories(){
-        setCategories();
         return categories;
     }
 }

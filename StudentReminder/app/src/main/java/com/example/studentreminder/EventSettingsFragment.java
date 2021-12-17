@@ -1,13 +1,16 @@
 package com.example.studentreminder;
 
 
+import android.media.metrics.Event;
 import android.os.Bundle;
 import android.view.View;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.databinding.ObservableArrayList;
+import androidx.databinding.ObservableList;
 import androidx.fragment.app.Fragment;
+import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
@@ -16,7 +19,7 @@ import com.example.studentreminder.viewmodels.CategoryViewModel;
 
 public class EventSettingsFragment extends Fragment {
     public EventSettingsFragment() {
-        super(R.layout.upcoming_events);
+        super(R.layout.event_settings);
     }
 
     @Override
@@ -24,9 +27,52 @@ public class EventSettingsFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         RecyclerView settingsRecyclerView = view.findViewById(R.id.cat_rec_view);
         settingsRecyclerView.setLayoutManager(new LinearLayoutManager(view.getContext()));
-        CategoryViewModel categoryViewModel = new CategoryViewModel(getActivity().getApplication());
+        CategoryViewModel categoryViewModel = new ViewModelProvider(getActivity()).get(CategoryViewModel.class);
         ObservableArrayList<CategoryItem> categories = categoryViewModel.getCategories();
-        
-        settingsRecyclerView.setAdapter(new EventSettingsAdapter(categories));
+
+        EventSettingsAdapter adapter = new EventSettingsAdapter(categories, category -> {
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, NewCategoryFragment.class, null);
+        });
+
+        categories.addOnListChangedCallback(new ObservableList.OnListChangedCallback<ObservableList<CategoryItem>>() {
+                                                @Override
+                                                public void onChanged(ObservableList<CategoryItem> sender) {
+                                                    getActivity().runOnUiThread(() ->{
+                                                        adapter.notifyDataSetChanged();
+                                                    });
+                                                }
+
+                                                @Override
+                                                public void onItemRangeChanged(ObservableList<CategoryItem> sender, int positionStart, int itemCount) {
+                                                    getActivity().runOnUiThread(()->{
+                                                        adapter.notifyItemRangeChanged(positionStart, itemCount);
+                                                    });
+                                                }
+
+                                                @Override
+                                                public void onItemRangeInserted(ObservableList<CategoryItem> sender, int positionStart, int itemCount) {
+                                                    getActivity().runOnUiThread(()->{
+                                                        adapter.notifyItemRangeInserted(positionStart, itemCount);
+                                                    });
+                                                }
+
+                                                @Override
+                                                public void onItemRangeMoved(ObservableList<CategoryItem> sender, int fromPosition, int toPosition, int itemCount) {
+                                                    getActivity().runOnUiThread(()->{
+                                                            adapter.notifyItemMoved(fromPosition, toPosition);
+                                                    });
+                                                }
+
+                                                @Override
+                                                public void onItemRangeRemoved(ObservableList<CategoryItem> sender, int positionStart, int itemCount) {
+                                                    getActivity().runOnUiThread(()->{
+                                                        adapter.notifyItemRangeRemoved(positionStart, itemCount);
+                                                    });
+                                                }
+                                            }
+
+        );
+        settingsRecyclerView.setAdapter(adapter);
     }
 }
