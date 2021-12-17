@@ -30,7 +30,7 @@
                 android:layout_height="?attr/actionBarSize"
                 app:layout_scrollFlags="scroll|enterAlways|snap"
                 app:navigationIcon="@drawable/ic_baseline_menu_24"
-                app:title="Canvas Reminder"
+                app:title="Canvas UI"
                 tools:layout_scrollFlags="snap" />
 
         </com.google.android.material.appbar.AppBarLayout>
@@ -42,18 +42,6 @@
             app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
 
     </androidx.coordinatorlayout.widget.CoordinatorLayout>
-
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/navigation_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/header_navigation_drawer"
-        app:menu="@menu/navigation_menu"
-        >
-
-    </com.google.android.material.navigation.NavigationView>
-
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

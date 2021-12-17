@@ -12,8 +12,6 @@ import com.android.volley.toolbox.Volley;
 import com.example.studentreminder.R;
 import com.example.studentreminder.models.User;
 import com.example.studentreminder.models.UpcomingEvent;
-import com.example.studentreminder.models.Course;
-
 
 
 import org.json.JSONArray;
