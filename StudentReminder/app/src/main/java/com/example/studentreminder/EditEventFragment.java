@@ -13,6 +13,11 @@ import android.view.ViewGroup;
 import com.example.studentreminder.databinding.FragmentEditEventBinding;
 import com.example.studentreminder.viewmodels.ToDoViewModel;
 import com.google.android.material.datepicker.MaterialDatePicker;
+import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
+
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.TimeZone;
 
 
 public class EditEventFragment extends Fragment {
@@ -26,7 +31,7 @@ public class EditEventFragment extends Fragment {
         FragmentEditEventBinding binding = FragmentEditEventBinding.inflate(inflater, container, false);
         // Inflate the layout for this fragment
         binding.save.setOnClickListener(view -> {
-
+            //TODO make the hookups to viewmodel
         });
         binding.date.setOnClickListener(view -> {
             MaterialDatePicker<Long> datePicker = MaterialDatePicker.Builder.datePicker()
