@@ -4,6 +4,7 @@ package com.example.studentreminder.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.EditText;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -11,7 +12,6 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.viewbinding.ViewBinding;
 import androidx.viewbinding.ViewBindings;
 import com.example.studentreminder.R;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.lang.NullPointerException;
 import java.lang.Override;
 import java.lang.String;
@@ -21,15 +21,19 @@ public final class FragmentEditEventBinding implements ViewBinding {
   private final ConstraintLayout rootView;
 
   @NonNull
-  public final EditText editTextTextPersonName;
+  public final Button date;
 
   @NonNull
-  public final FloatingActionButton save;
+  public final EditText getEvent;
 
-  private FragmentEditEventBinding(@NonNull ConstraintLayout rootView,
-      @NonNull EditText editTextTextPersonName, @NonNull FloatingActionButton save) {
+  @NonNull
+  public final Button save;
+
+  private FragmentEditEventBinding(@NonNull ConstraintLayout rootView, @NonNull Button date,
+      @NonNull EditText getEvent, @NonNull Button save) {
     this.rootView = rootView;
-    this.editTextTextPersonName = editTextTextPersonName;
+    this.date = date;
+    this.getEvent = getEvent;
     this.save = save;
   }
 
@@ -60,20 +64,25 @@ public final class FragmentEditEventBinding implements ViewBinding {
     // This is done to optimize the compiled bytecode for size and performance.
     int id;
     missingId: {
-      id = R.id.editTextTextPersonName;
-      EditText editTextTextPersonName = ViewBindings.findChildViewById(rootView, id);
-      if (editTextTextPersonName == null) {
+      id = R.id.date;
+      Button date = ViewBindings.findChildViewById(rootView, id);
+      if (date == null) {
+        break missingId;
+      }
+
+      id = R.id.getEvent;
+      EditText getEvent = ViewBindings.findChildViewById(rootView, id);
+      if (getEvent == null) {
         break missingId;
       }
 
       id = R.id.save;
-      FloatingActionButton save = ViewBindings.findChildViewById(rootView, id);
+      Button save = ViewBindings.findChildViewById(rootView, id);
       if (save == null) {
         break missingId;
       }
 
-      return new FragmentEditEventBinding((ConstraintLayout) rootView, editTextTextPersonName,
-          save);
+      return new FragmentEditEventBinding((ConstraintLayout) rootView, date, getEvent, save);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));
