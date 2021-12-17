@@ -13,6 +13,7 @@ import android.os.PersistableBundle;
 import android.view.MenuInflater;
 import android.widget.TextView;
 
+import com.example.studentreminder.viewmodels.UserViewModel;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -23,21 +24,25 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
+        UserViewModel userViewModel = new UserViewModel(getApplication());
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .setReorderingAllowed(true)
-                    .add(R.id.fragment_container, UpcomingEventsFragment.class, null)
-                    .commit();
+            if(userViewModel.getUser().getValue() == null){
+                getSupportFragmentManager().beginTransaction()
+                        .setReorderingAllowed(true)
+                        .add(R.id.fragment_container, UserProfileFragment.class, null)
+                        .commit();
+            }
+            else {
+                getSupportFragmentManager().beginTransaction()
+                        .setReorderingAllowed(true)
+                        .add(R.id.fragment_container, UpcomingEventsFragment.class, null)
+                        .commit();
+            }
         }
 
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         MaterialToolbar toolbar = findViewById(R.id.top_app_bar);
         NavigationView navigationView = findViewById(R.id.navigation_view);
-
-
-
-
 
         toolbar.setNavigationOnClickListener(view -> {
             drawerLayout.open();
