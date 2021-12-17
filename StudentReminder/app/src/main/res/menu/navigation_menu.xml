@@ -4,10 +4,14 @@
     <group android:checkableBehavior="single">
         <item android:id="@+id/event_settings"
             android:title="Event Settings"
-            android:icon="@drawable/ic_baseline_event_24"
+            android:icon="@drawable/ic_baseline_settings_24"
             />
         <item android:id="@+id/profile_item"
             android:title="Profile"
+            android:icon="@drawable/ic_baseline_person_24"
+            />
+        <item android:id="@+id/events"
+            android:title="Events Home"
             android:icon="@drawable/ic_baseline_person_24"
             />
     </group>

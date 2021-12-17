@@ -7,6 +7,10 @@
         <entry key="..\:/Users/geoff/Documents/School/StudentReminder/StudentReminder/app/src/main/res/layout/category_list_item.xml" value="0.33" />
         <entry key="..\:/Users/geoff/Documents/School/StudentReminder/StudentReminder/app/src/main/res/layout/event_settings.xml" value="0.33" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/edit_event.xml" value="0.27898550724637683" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/edit_event_item.xml" value="0.27898550724637683" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/fragment_edit_event.xml" value="0.27898550724637683" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/fragment_event.xml" value="0.25" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/header_navigation_drawer.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/home.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/new_category.xml" value="0.20520833333333333" />
@@ -14,6 +18,7 @@
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/upcoming_events_list_item.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/user_profile.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/menu/navigation_menu.xml" value="0.20520833333333333" />
+        <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.3828125" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/app/src/main/res/layout/activity_main.xml" value="0.16259057971014493" />
       </map>
     </option>

@@ -7,6 +7,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+
+
 import android.content.ClipData;
 import android.os.Bundle;
 import android.os.PersistableBundle;
@@ -25,20 +27,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         UserViewModel userViewModel = new UserViewModel(getApplication());
-        if (savedInstanceState == null) {
-            if(userViewModel.getUser().getValue() == null){
-                getSupportFragmentManager().beginTransaction()
-                        .setReorderingAllowed(true)
-                        .add(R.id.fragment_container, UserProfileFragment.class, null)
-                        .commit();
-            }
-            else {
-                getSupportFragmentManager().beginTransaction()
-                        .setReorderingAllowed(true)
-                        .add(R.id.fragment_container, UpcomingEventsFragment.class, null)
-                        .commit();
-            }
-        }
 
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         MaterialToolbar toolbar = findViewById(R.id.top_app_bar);
@@ -66,7 +54,15 @@ public class MainActivity extends AppCompatActivity {
                         .addToBackStack(null)
                         .commit();
             }
+            if (menuItem.getItemId() == R.id.events) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.fragment_container, EventFragment.class, null)
+                        .setReorderingAllowed(true)
+                        .addToBackStack(null)
+                        .commit();
+            }
             return true;
         });
+
     }
 }

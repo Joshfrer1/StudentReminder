@@ -16,7 +16,7 @@ import com.example.studentreminder.viewmodels.CategoryViewModel;
 
 public class EventSettingsFragment extends Fragment {
     public EventSettingsFragment() {
-        super(R.layout.upcoming_events);
+        super(R.layout.event_settings);
     }
 
     @Override

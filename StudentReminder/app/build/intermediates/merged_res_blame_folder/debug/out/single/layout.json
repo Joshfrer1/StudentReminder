@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\header_navigation_drawer.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\header_navigation_drawer.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\activity_main.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\edit_event_item.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\edit_event_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\event_settings.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\event_settings.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\category_list_item.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\category_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_edit_event.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\fragment_edit_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\home.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\home.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\upcoming_events_list_item.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events_list_item.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\upcoming_events.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\user_profile.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\user_profile.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\edit_event.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\edit_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\fragment_event.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\fragment_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\new_category.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\new_category.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\incremental\\mergeDebugResources\\stripped.dir\\layout\\add_reminder.xml",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\add_reminder.xml"
+    }
+]

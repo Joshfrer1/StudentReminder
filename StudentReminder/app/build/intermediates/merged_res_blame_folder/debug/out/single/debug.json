@@ -1,22 +1,29 @@
 [
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_home.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\home.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_menu_24.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_menu_24.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_event.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\fragment_event.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\activity_main.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-<<<<<<< HEAD
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_west_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_west_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+    },
+    {
         "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
         "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
@@ -25,115 +32,123 @@
         "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_fragment_edit_event.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\fragment_edit_event.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_save_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_save_24.xml"
+    },
+    {
         "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
         "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
-=======
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_settings_24.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_user_profile.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\user_profile.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
->>>>>>> 67b6f1abb619ca439b824bacb63400699c320149
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_category_list_item.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\category_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_edit_24.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_color_shape.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\color_shape.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_event_settings.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\event_settings.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_edit_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_edit_24.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_upcoming_events_list_item.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events_list_item.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\menu_navigation_menu.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\menu\\navigation_menu.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_settings_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_upcoming_events.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_upcoming_events.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_new_category.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\new_category.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_edit_event.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\edit_event.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_add_reminder.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\add_reminder.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_person_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_person_24.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_event_settings.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\event_settings.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_menu_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_menu_24.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_upcoming_events_list_item.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events_list_item.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_home.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\home.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_event_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_event_24.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_event_24.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_event_24.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_edit_event.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\edit_event.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_header_navigation_drawer.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\header_navigation_drawer.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_new_category.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\new_category.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.webp"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_header_navigation_drawer.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\header_navigation_drawer.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_user_profile.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\user_profile.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\menu_navigation_menu.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\menu\\navigation_menu.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_edit_event_item.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\edit_event_item.xml"
     },
     {
-        "merged": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "C:\\Users\\geoff\\Documents\\School\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
+    },
+    {
+        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_add_reminder.xml.flat",
+        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\add_reminder.xml"
     }
 ]
