@@ -9,11 +9,7 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3449f8e6-997b-4cb4-96cd-f099b08607a6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/local.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StudentReminder/app/src/main/java/com/example/studentreminder/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/StudentReminder/app/src/main/java/com/example/studentreminder/MainActivity.java" afterDir="false" />
-    </list>
+    <list default="true" id="3449f8e6-997b-4cb4-96cd-f099b08607a6" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

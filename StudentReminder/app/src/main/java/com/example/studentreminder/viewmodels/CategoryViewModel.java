@@ -58,11 +58,16 @@ public class CategoryViewModel extends AndroidViewModel {
         }).start();
     }
 
-    public void getCategories() {
+    private void setCategories() {
         new Thread(() -> {
             ArrayList<CategoryItem> catList;
             catList = (ArrayList<CategoryItem>) database.getCategoryItemDao().getCategories();
             categories.addAll(catList);
         }).start();
+    }
+
+    public ObservableArrayList<CategoryItem> getCategories(){
+        setCategories();
+        return categories;
     }
 }

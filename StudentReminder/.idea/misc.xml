@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/geoff/Documents/School/StudentReminder/StudentReminder/app/src/main/res/drawable/color_shape.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/geoff/Documents/School/StudentReminder/StudentReminder/app/src/main/res/layout/category_list_item.xml" value="0.33" />
+        <entry key="..\:/Users/geoff/Documents/School/StudentReminder/StudentReminder/app/src/main/res/layout/event_settings.xml" value="0.33" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/header_navigation_drawer.xml" value="0.20520833333333333" />
         <entry key="..\:/Users/joshf/AndroidStudioProjects/StudentReminder/StudentReminder/StudentReminder/app/src/main/res/layout/home.xml" value="0.20520833333333333" />
