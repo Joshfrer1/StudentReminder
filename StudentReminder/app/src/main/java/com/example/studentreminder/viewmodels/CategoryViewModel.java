@@ -67,6 +67,10 @@ public class CategoryViewModel extends AndroidViewModel {
         }).start();
     }
 
+    public MutableLiveData<CategoryItem> getCurrentCategory() {
+        return currentCategory;
+    }
+
     public ObservableArrayList<CategoryItem> getCategories(){
         return categories;
     }
