@@ -16,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.studentreminder.models.CategoryItem;
 import com.example.studentreminder.viewmodels.CategoryViewModel;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class EventSettingsFragment extends Fragment {
     public EventSettingsFragment() {
@@ -74,5 +75,13 @@ public class EventSettingsFragment extends Fragment {
 
         );
         settingsRecyclerView.setAdapter(adapter);
+        FloatingActionButton button = view.findViewById(R.id.floatingActionButton);
+        button.setOnClickListener(thing ->{
+            getActivity().getSupportFragmentManager().beginTransaction()
+                    .replace(R.id.fragment_container, NewCategoryFragment.class, null)
+                    .setReorderingAllowed(true)
+                    .addToBackStack(null)
+                    .commit();
+        });
     }
 }
