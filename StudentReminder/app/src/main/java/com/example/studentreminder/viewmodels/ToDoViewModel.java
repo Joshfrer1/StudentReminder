@@ -3,7 +3,7 @@ package com.example.studentreminder.viewmodels;
 import android.app.Application;
 
 import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
+
 import androidx.databinding.ObservableArrayList;
 import androidx.lifecycle.AndroidViewModel;
 import androidx.lifecycle.MutableLiveData;
@@ -15,66 +15,93 @@ import com.example.studentreminder.models.CategoryItem;
 import com.example.studentreminder.models.ToDoItem;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Iterator;
 import java.util.List;
-import java.util.ListIterator;
+import android.os.Handler;
 
 public class ToDoViewModel extends AndroidViewModel {
 
     private AppDatabase database;
-    private MutableLiveData<Boolean> saving = new MutableLiveData<Boolean>();
+    private Handler handler;
     private MutableLiveData<ToDoItem> currentItem = new MutableLiveData<>();
     private ObservableArrayList<ToDoItem> toDoList = new ObservableArrayList<>();
+    private boolean loaded = false;
 
 
 
     public ToDoViewModel(@NonNull Application application) {
         super(application);
         database = Room.databaseBuilder(application, AppDatabase.class, application.getString(R.string.db_name)).build();
-        saving.setValue(false);
+        handler = new Handler();
     }
 
-    public MutableLiveData<Boolean> getSaving() {
-        return saving;
-    }
-
-    public void saveNewToDoItem(String title, String dueDate, String remindDate, String reoccur, int canvasId){
-        saving.setValue(true);
-        new Thread(() ->{
-            ToDoItem item = new ToDoItem();
-            item.title = title;
-            item.dueDate = dueDate;
-            item.remindDate = remindDate;
-            item.reoccur = reoccur;
-            item.canvasId = canvasId;
-            item.isCompleted = false;
-            item.id = database.getToDoItemDao().insert(item);
-            saving.postValue(false);
-        }).start();
-    }
-    public void saveNewToDoItem(String title, String dueDate, String remindDate, String reoccur, int canvasId, int categoryId){
-        saving.setValue(true);
-        new Thread(() ->{
-            ToDoItem item = new ToDoItem();
-            item.title = title;
-            item.dueDate = dueDate;
-            item.remindDate = remindDate;
-            item.reoccur = reoccur;
-            item.categoryId = categoryId;
-            item.canvasId = canvasId;
-            item.isCompleted = false;
-            item.id = database.getToDoItemDao().insert(item);
-            saving.postValue(false);
-        }).start();
+    public void loadTodos() {
+        if (!loaded) {
+            loaded = true;
+            new Thread(() -> {
+                List<ToDoItem> todoList = database.getToDoItemDao().getAll();
+                handler.post(() -> {
+                    todoList.addAll(todoList);
+                });
+            }).start();
+        }
 
     }
 
-    public void updateToDoItem(ToDoItem item){
-        saving.setValue(true);
+    public void removeTodoCommand(ToDoItem todo) {
+
+    }
+
+    public ObservableArrayList<ToDoItem> getTodos() {return toDoList;}
+
+    public void setCurrentTodo(ToDoItem todo){this.currentItem.setValue(todo);}
+
+    public MutableLiveData<ToDoItem> getCurrentItem() {return currentItem;}
+
+    public void markTodoCommand(ToDoItem todo, boolean isDone) {
         new Thread(() -> {
-            database.getToDoItemDao().update(item);
-            saving.postValue(false);
+            todo.isCompleted = isDone;
+            database.getToDoItemDao().update(todo);
+            int index = toDoList.indexOf(todo);
+            handler.post(() -> {
+                toDoList.set(index, todo);
+            });
+        }).start();
+
+    }
+
+
+    public void saveNewToDoItem(String title){
+        new Thread(() -> {
+            if (currentItem.getValue() != null) {
+                // updating
+                currentItem.getValue().title = title;
+                database.getToDoItemDao().update(currentItem.getValue());
+                int index = toDoList.indexOf(currentItem.getValue());
+                handler.post(() -> {
+                    toDoList.set(index, currentItem.getValue());
+                });
+            } else {
+                // create
+                ToDoItem newTodo = new ToDoItem();
+                newTodo.title = title;
+                newTodo.id = database.getToDoItemDao().insert(newTodo);
+                // TODO add to database
+                handler.post(() -> {
+                    toDoList.add(newTodo);
+                });
+            }
+        }).start();
+
+    }
+
+    public void updateTodoCommand(ToDoItem todo, String title) {
+        new Thread(() -> {
+            todo.title = title;
+            database.getToDoItemDao().update(todo);
+            int index = toDoList.indexOf(todo);
+            handler.post(() -> {
+                toDoList.set(index, todo);
+            });
         }).start();
     }
 
@@ -93,17 +120,6 @@ public class ToDoViewModel extends AndroidViewModel {
         }).start();
     }
 
-    public void deleteCanvasItems(){
-        saving.setValue(true);
-        new Thread(() -> {
-            ArrayList<ToDoItem> items = (ArrayList<ToDoItem>) database.getToDoItemDao().getCanvasItems();
-            for(ToDoItem item: items){
-                database.getToDoItemDao().deleteItem(item);
-                toDoList.remove(item);
-            }
-            saving.postValue(false);
-        }).start();
-    }
 
     public void deleteCurrentItem(){
         deleteToDoItem(currentItem.getValue());

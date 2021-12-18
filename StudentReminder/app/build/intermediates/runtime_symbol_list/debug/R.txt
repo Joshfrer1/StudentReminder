@@ -2025,9 +2025,7 @@ int id endToStart 0x7f0800b6
 int id end_padder 0x7f0800b7
 int id enterAlways 0x7f0800b8
 int id enterAlwaysCollapsed 0x7f0800b9
-int id event_recycler_view 0x7f0800ba
 int id event_settings 0x7f0800bb
-int id event_title 0x7f0800bc
 int id events 0x7f0800bd
 int id exitUntilCollapsed 0x7f0800be
 int id expand_activities_button 0x7f0800bf
@@ -2407,7 +2405,6 @@ int layout abc_search_view 0x7f0b0019
 int layout abc_select_dialog_material 0x7f0b001a
 int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
-int layout add_reminder 0x7f0b001d
 int layout category_list_item 0x7f0b001e
 int layout custom_dialog 0x7f0b001f
 int layout design_bottom_navigation_item 0x7f0b0020
@@ -2510,8 +2507,6 @@ int layout text_view_with_line_height_from_layout 0x7f0b0080
 int layout text_view_with_line_height_from_style 0x7f0b0081
 int layout text_view_with_theme_line_height 0x7f0b0082
 int layout text_view_without_line_height 0x7f0b0083
-int layout upcoming_events 0x7f0b0084
-int layout upcoming_events_list_item 0x7f0b0085
 int layout user_profile 0x7f0b0086
 int menu navigation_menu 0x7f0c0000
 int mipmap ic_launcher 0x7f0d0000

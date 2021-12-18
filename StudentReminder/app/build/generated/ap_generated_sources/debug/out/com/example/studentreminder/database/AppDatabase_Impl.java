@@ -37,11 +37,11 @@ public final class AppDatabase_Impl extends AppDatabase {
     final SupportSQLiteOpenHelper.Callback _openCallback = new RoomOpenHelper(configuration, new RoomOpenHelper.Delegate(1) {
       @Override
       public void createAllTables(SupportSQLiteDatabase _db) {
-        _db.execSQL("CREATE TABLE IF NOT EXISTS `ToDoItem` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `due_date` TEXT, `remind_date` TEXT, `reoccur` TEXT, `category_id` INTEGER NOT NULL, `canvas_id` INTEGER NOT NULL, `is_completed` INTEGER NOT NULL)");
+        _db.execSQL("CREATE TABLE IF NOT EXISTS `ToDoItem` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `title` TEXT, `is_completed` INTEGER NOT NULL)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `CategoryItem` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `category` TEXT, `colour` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS `User` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `canvasId` INTEGER NOT NULL, `name` TEXT, `token` TEXT)");
         _db.execSQL("CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)");
-        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, 'fa47fb8892d4c377e5548ecd019fac97')");
+        _db.execSQL("INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '562461ff6cb0c5930e501aeecdbe1970')");
       }
 
       @Override
@@ -87,14 +87,9 @@ public final class AppDatabase_Impl extends AppDatabase {
 
       @Override
       protected RoomOpenHelper.ValidationResult onValidateSchema(SupportSQLiteDatabase _db) {
-        final HashMap<String, TableInfo.Column> _columnsToDoItem = new HashMap<String, TableInfo.Column>(8);
+        final HashMap<String, TableInfo.Column> _columnsToDoItem = new HashMap<String, TableInfo.Column>(3);
         _columnsToDoItem.put("id", new TableInfo.Column("id", "INTEGER", true, 1, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsToDoItem.put("title", new TableInfo.Column("title", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("due_date", new TableInfo.Column("due_date", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("remind_date", new TableInfo.Column("remind_date", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("reoccur", new TableInfo.Column("reoccur", "TEXT", false, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("category_id", new TableInfo.Column("category_id", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
-        _columnsToDoItem.put("canvas_id", new TableInfo.Column("canvas_id", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         _columnsToDoItem.put("is_completed", new TableInfo.Column("is_completed", "INTEGER", true, 0, null, TableInfo.CREATED_FROM_ENTITY));
         final HashSet<TableInfo.ForeignKey> _foreignKeysToDoItem = new HashSet<TableInfo.ForeignKey>(0);
         final HashSet<TableInfo.Index> _indicesToDoItem = new HashSet<TableInfo.Index>(0);
@@ -134,7 +129,7 @@ public final class AppDatabase_Impl extends AppDatabase {
         }
         return new RoomOpenHelper.ValidationResult(true, null);
       }
-    }, "fa47fb8892d4c377e5548ecd019fac97", "4056f0b591e9fbfec3b96d39788fd7aa");
+    }, "562461ff6cb0c5930e501aeecdbe1970", "ad403f2df7951cb20e36b8a494d8afac");
     final SupportSQLiteOpenHelper.Configuration _sqliteConfig = SupportSQLiteOpenHelper.Configuration.builder(configuration.context)
         .name(configuration.name)
         .callback(_openCallback)

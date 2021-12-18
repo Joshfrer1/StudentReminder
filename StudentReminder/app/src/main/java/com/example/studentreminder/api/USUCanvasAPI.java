@@ -83,44 +83,4 @@ public class USUCanvasAPI {
 
         queue.add(jsonObjectRequest);
     }
-
-    public void getUpcomingEvents(OnRequestCompleteListener<ToDoItem> onRequestCompleteListener) {
-        JsonArrayRequest jsonObjectRequest = new JsonArrayRequest(
-                Request.Method.GET,
-                "https://usu.instructure.com/api/v1/users/self/upcoming_events?per_page=1&access_token=" + token,
-                null,
-                new Response.Listener<JSONArray>() {
-                    @Override
-                    public void onResponse(JSONArray response) {
-                        ToDoItem[] events = new ToDoItem[response.length()];
-                        for(int i=0; i<response.length(); i++) {
-                            try {
-                                JSONObject obj = response.getJSONObject(i);
-                                ToDoItem item = new ToDoItem();
-                                item.title = obj.getString("title");
-                                item.canvasId = Integer.parseInt(obj.getString("id"));
-                                item.dueDate = obj.getString("due_at");
-                                events[i] = item;
-                            } catch (JSONException e) {
-                                onRequestCompleteListener.onComplete(null, e.toString());
-                                e.printStackTrace();
-                            }
-                        }
-                        onRequestCompleteListener.onComplete(events, null);
-                        System.out.println(response.toString());
-                    }
-                }, new Response.ErrorListener() {
-            @Override
-            public void onErrorResponse(VolleyError error) {
-                // TODO: Handle error
-                onRequestCompleteListener.onComplete(null, error.toString());
-                error.printStackTrace();
-
-            }
-        });
-
-        queue.add(jsonObjectRequest);
-    }
-
-
 }

@@ -92,10 +92,6 @@
         "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_settings_24.xml"
     },
     {
-        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_upcoming_events.xml.flat",
-        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events.xml"
-    },
-    {
         "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_edit_event.xml.flat",
         "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\edit_event.xml"
     },
@@ -106,10 +102,6 @@
     {
         "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_menu_24.xml.flat",
         "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_menu_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_upcoming_events_list_item.xml.flat",
-        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\upcoming_events_list_item.xml"
     },
     {
         "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_event_24.xml.flat",
@@ -146,9 +138,5 @@
     {
         "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\drawable_ic_baseline_add_24.xml.flat",
         "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\drawable\\ic_baseline_add_24.xml"
-    },
-    {
-        "merged": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\build\\intermediates\\merged_res\\debug\\layout_add_reminder.xml.flat",
-        "source": "C:\\Users\\joshf\\AndroidStudioProjects\\StudentReminder\\StudentReminder\\StudentReminder\\app\\src\\main\\res\\layout\\add_reminder.xml"
     }
 ]

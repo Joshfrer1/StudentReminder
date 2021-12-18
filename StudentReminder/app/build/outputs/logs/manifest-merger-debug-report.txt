@@ -96,7 +96,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\jo
 	android:icon
 		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:8:9-43
 	android:allowBackup
-		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:7:9-35
+		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:7:9-36
 	android:theme
 		ADDED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:12:9-53
 activity#com.example.studentreminder.MainActivity

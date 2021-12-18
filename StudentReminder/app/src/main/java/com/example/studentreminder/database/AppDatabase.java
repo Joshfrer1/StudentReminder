@@ -7,6 +7,7 @@ import com.example.studentreminder.models.CategoryItem;
 import com.example.studentreminder.models.ToDoItem;
 import com.example.studentreminder.models.User;
 
+
 @Database(entities ={ToDoItem.class, CategoryItem.class, User.class}, version = 1, exportSchema = false)
 public abstract class AppDatabase extends RoomDatabase {
     public abstract ToDoItemDao getToDoItemDao();

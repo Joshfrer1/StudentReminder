@@ -2026,9 +2026,7 @@ id endToStart
 id end_padder
 id enterAlways
 id enterAlwaysCollapsed
-id event_recycler_view
 id event_settings
-id event_title
 id events
 id exitUntilCollapsed
 id expand_activities_button
@@ -2408,7 +2406,6 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
-layout add_reminder
 layout category_list_item
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -2511,8 +2508,6 @@ layout text_view_with_line_height_from_layout
 layout text_view_with_line_height_from_style
 layout text_view_with_theme_line_height
 layout text_view_without_line_height
-layout upcoming_events
-layout upcoming_events_list_item
 layout user_profile
 menu navigation_menu
 mipmap ic_launcher

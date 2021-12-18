@@ -15,13 +15,11 @@ public interface ToDoItemDao {
     @Insert
     public long insert(ToDoItem item);
 
-    @Query("select * from todoitem where is_completed = 0 order by remind_date, due_date")
+    @Query("SELECT * FROM ToDoItem")
     public List<ToDoItem> getAll();
-    @Query("select * from todoitem where id = :id")
-    public ToDoItem findById(long id);
-    @Query("select * from todoitem where canvas_id <> null")
-    public List<ToDoItem> getCanvasItems();
 
+    @Query("SELECT * FROM ToDoItem WHERE id = :id")
+    public ToDoItem getOne(long id);
 
     @Update
     public void update(ToDoItem item);

@@ -10,6 +10,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+
 import com.example.studentreminder.databinding.FragmentEditEventBinding;
 import com.example.studentreminder.viewmodels.ToDoViewModel;
 import com.google.android.material.datepicker.MaterialDatePicker;
@@ -32,9 +33,14 @@ public class EditEventFragment extends Fragment {
         ToDoViewModel viewModel = new ViewModelProvider(requireActivity()).get(ToDoViewModel.class);
         FragmentEditEventBinding binding = FragmentEditEventBinding.inflate(inflater, container, false);
         // Inflate the layout for this fragment
-        binding.save.setOnClickListener(view -> {
-            //TODO make the hookups to viewmodel
+
+        viewModel.getCurrentItem().observe(getViewLifecycleOwner(), (todo) -> {
+            if (todo != null) {
+                binding.getEvent.setText(todo.title);
+            }
         });
+
+
         binding.date.setOnClickListener(view -> {
             MaterialDatePicker<Long> datePicker = MaterialDatePicker.Builder.datePicker()
                     .setTitleText("Select Reminder Date")
@@ -51,7 +57,14 @@ public class EditEventFragment extends Fragment {
                    .build();
            timePicker.show(requireActivity().getSupportFragmentManager(), "time");
         });
+        binding.getRoot().setOnClickListener(view -> {
+            getActivity().getSupportFragmentManager().popBackStack();
+        });
 
+        binding.save.setOnClickListener(view -> {
+            viewModel.saveNewToDoItem(binding.getEvent.getText().toString());
+            getActivity().getSupportFragmentManager().popBackStack();
+        });
         return binding.getRoot();
     }
 }
