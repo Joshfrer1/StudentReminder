@@ -12,7 +12,7 @@ import androidx.databinding.ObservableList;
 import com.example.studentreminder.databinding.EditEventItemBinding;
 import com.example.studentreminder.models.ToDoItem;
 import com.example.studentreminder.viewmodels.ToDoViewModel;
-import com.example.studentreminder.databinding.FragmentEventBinding;
+
 
 public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> {
     private ObservableArrayList<ToDoItem> todos;
