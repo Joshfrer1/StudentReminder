@@ -32,12 +32,11 @@ public class CategoryViewModel extends AndroidViewModel {
         return saving;
     }
 
-    public void saveNewCategory(String title, String colour){
+    public void saveNewCategory(String title){
         saving.setValue(true);
         new Thread(() ->{
             CategoryItem category = new CategoryItem();
             category.category = title;
-            category.colour = colour;
             category.id = database.getCategoryItemDao().insert(category);
             categories.add(category);
             saving.postValue(false);

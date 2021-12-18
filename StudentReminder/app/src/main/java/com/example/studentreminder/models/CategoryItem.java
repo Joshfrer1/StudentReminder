@@ -9,6 +9,4 @@ public class CategoryItem {
     public long id;
     @ColumnInfo
     public String category;
-    @ColumnInfo
-    public String colour;
 }
