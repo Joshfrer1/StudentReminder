@@ -12,7 +12,7 @@
             />
         <item android:id="@+id/events"
             android:title="Events Home"
-            android:icon="@drawable/ic_baseline_person_24"
+            android:icon="@drawable/ic_baseline_home_24"
             />
     </group>
 </menu>

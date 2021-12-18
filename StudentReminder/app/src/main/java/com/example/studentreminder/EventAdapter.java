@@ -94,6 +94,4 @@ public class EventAdapter extends RecyclerView.Adapter<EventAdapter.ViewHolder> 
             this.binding = binding;
         }
     }
-
-
 }

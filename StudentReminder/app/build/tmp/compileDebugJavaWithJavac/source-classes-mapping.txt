@@ -1,43 +1,50 @@
-com/example/studentreminder/database/AppDatabase.java
- com.example.studentreminder.database.AppDatabase
-com/example/studentreminder/EditEventFragment.java
- com.example.studentreminder.EditEventFragment
-com/example/studentreminder/databinding/EditEventItemBinding.java
- com.example.studentreminder.databinding.EditEventItemBinding
-com/example/studentreminder/BuildConfig.java
- com.example.studentreminder.BuildConfig
-com/example/studentreminder/database/UserDao.java
- com.example.studentreminder.database.UserDao
-com/example/studentreminder/models/User.java
- com.example.studentreminder.models.User
-com/example/studentreminder/models/CategoryItem.java
- com.example.studentreminder.models.CategoryItem
-com/example/studentreminder/models/ToDoItem.java
- com.example.studentreminder.models.ToDoItem
-com/example/studentreminder/DataBindingTriggerClass.java
- com.example.studentreminder.DataBindingTriggerClass
-com/example/studentreminder/models/UpcomingEvent.java
- com.example.studentreminder.models.UpcomingEvent
-com/example/studentreminder/database/ToDoItemDao.java
- com.example.studentreminder.database.ToDoItemDao
-com/example/studentreminder/database/CategoryItemDao.java
- com.example.studentreminder.database.CategoryItemDao
 com/example/studentreminder/databinding/HomeBinding.java
  com.example.studentreminder.databinding.HomeBinding
 com/example/studentreminder/databinding/FragmentEditEventBinding.java
  com.example.studentreminder.databinding.FragmentEditEventBinding
+com/example/studentreminder/EventAdapter.java
+ com.example.studentreminder.EventAdapter
+ com.example.studentreminder.EventAdapter$1
+ com.example.studentreminder.EventAdapter$OnEditClicked
+ com.example.studentreminder.EventAdapter$ViewHolder
 com/example/studentreminder/databinding/CategoryListItemBinding.java
  com.example.studentreminder.databinding.CategoryListItemBinding
-com/example/studentreminder/viewmodels/CategoryViewModel.java
- com.example.studentreminder.viewmodels.CategoryViewModel
-com/example/studentreminder/viewmodels/ToDoViewModel.java
- com.example.studentreminder.viewmodels.ToDoViewModel
 com/example/studentreminder/databinding/EditEventBinding.java
  com.example.studentreminder.databinding.EditEventBinding
-com/example/studentreminder/databinding/ActivityMainBinding.java
- com.example.studentreminder.databinding.ActivityMainBinding
 com/example/studentreminder/databinding/NewCategoryBinding.java
  com.example.studentreminder.databinding.NewCategoryBinding
+com/example/studentreminder/models/CategoryItem.java
+ com.example.studentreminder.models.CategoryItem
+com/example/studentreminder/viewmodels/UserViewModel.java
+ com.example.studentreminder.viewmodels.UserViewModel
+com/example/studentreminder/DataBindingTriggerClass.java
+ com.example.studentreminder.DataBindingTriggerClass
+com/example/studentreminder/databinding/UserProfileBinding.java
+ com.example.studentreminder.databinding.UserProfileBinding
+com/example/studentreminder/EventSettingsFragment.java
+ com.example.studentreminder.EventSettingsFragment
+com/example/studentreminder/database/CategoryItemDao.java
+ com.example.studentreminder.database.CategoryItemDao
+com/example/studentreminder/databinding/FragmentEventBinding.java
+ com.example.studentreminder.databinding.FragmentEventBinding
+com/example/studentreminder/BuildConfig.java
+ com.example.studentreminder.BuildConfig
+com/example/studentreminder/databinding/EditEventItemBinding.java
+ com.example.studentreminder.databinding.EditEventItemBinding
+com/example/studentreminder/models/UpcomingEvent.java
+ com.example.studentreminder.models.UpcomingEvent
+com/example/studentreminder/database/ToDoItemDao.java
+ com.example.studentreminder.database.ToDoItemDao
+com/example/studentreminder/viewmodels/CategoryViewModel.java
+ com.example.studentreminder.viewmodels.CategoryViewModel
+com/example/studentreminder/models/ToDoItem.java
+ com.example.studentreminder.models.ToDoItem
+com/example/studentreminder/viewmodels/ToDoViewModel.java
+ com.example.studentreminder.viewmodels.ToDoViewModel
+com/example/studentreminder/databinding/ActivityMainBinding.java
+ com.example.studentreminder.databinding.ActivityMainBinding
+com/example/studentreminder/models/User.java
+ com.example.studentreminder.models.User
 com/example/studentreminder/MainActivity.java
  com.example.studentreminder.MainActivity
 com/example/studentreminder/EventSettingsAdapter.java
@@ -45,29 +52,22 @@ com/example/studentreminder/EventSettingsAdapter.java
  com.example.studentreminder.EventSettingsAdapter$ViewHolder
 com/example/studentreminder/databinding/EventSettingsBinding.java
  com.example.studentreminder.databinding.EventSettingsBinding
-com/example/studentreminder/viewmodels/UserViewModel.java
- com.example.studentreminder.viewmodels.UserViewModel
 com/example/studentreminder/UserProfileFragment.java
  com.example.studentreminder.UserProfileFragment
  com.example.studentreminder.UserProfileFragment$1
+com/example/studentreminder/database/UserDao.java
+ com.example.studentreminder.database.UserDao
 com/example/studentreminder/api/USUCanvasAPI.java
  com.example.studentreminder.api.USUCanvasAPI
  com.example.studentreminder.api.USUCanvasAPI$1
  com.example.studentreminder.api.USUCanvasAPI$2
  com.example.studentreminder.api.USUCanvasAPI$InvalidTokenException
  com.example.studentreminder.api.USUCanvasAPI$OnRequestCompleteListener
-com/example/studentreminder/databinding/UserProfileBinding.java
- com.example.studentreminder.databinding.UserProfileBinding
-com/example/studentreminder/EventSettingsFragment.java
- com.example.studentreminder.EventSettingsFragment
-com/example/studentreminder/databinding/FragmentEventBinding.java
- com.example.studentreminder.databinding.FragmentEventBinding
-com/example/studentreminder/databinding/HeaderNavigationDrawerBinding.java
- com.example.studentreminder.databinding.HeaderNavigationDrawerBinding
-com/example/studentreminder/EventAdapter.java
- com.example.studentreminder.EventAdapter
- com.example.studentreminder.EventAdapter$1
- com.example.studentreminder.EventAdapter$OnEditClicked
- com.example.studentreminder.EventAdapter$ViewHolder
 com/example/studentreminder/EventFragment.java
  com.example.studentreminder.EventFragment
+com/example/studentreminder/databinding/HeaderNavigationDrawerBinding.java
+ com.example.studentreminder.databinding.HeaderNavigationDrawerBinding
+com/example/studentreminder/EditEventFragment.java
+ com.example.studentreminder.EditEventFragment
+com/example/studentreminder/database/AppDatabase.java
+ com.example.studentreminder.database.AppDatabase
