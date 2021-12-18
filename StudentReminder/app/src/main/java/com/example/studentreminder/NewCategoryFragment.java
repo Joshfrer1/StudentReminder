@@ -30,7 +30,7 @@ public class NewCategoryFragment extends Fragment {
         }
         else{
             item.category = editText.getText().toString();
-            categoryViewModel.saveNewCategory(item.category, null);
+            categoryViewModel.saveNewCategory(item.category);
         }
 
 
