@@ -29,12 +29,16 @@ public final class FragmentEditEventBinding implements ViewBinding {
   @NonNull
   public final Button save;
 
+  @NonNull
+  public final Button time;
+
   private FragmentEditEventBinding(@NonNull ConstraintLayout rootView, @NonNull Button date,
-      @NonNull EditText getEvent, @NonNull Button save) {
+      @NonNull EditText getEvent, @NonNull Button save, @NonNull Button time) {
     this.rootView = rootView;
     this.date = date;
     this.getEvent = getEvent;
     this.save = save;
+    this.time = time;
   }
 
   @Override
@@ -82,7 +86,13 @@ public final class FragmentEditEventBinding implements ViewBinding {
         break missingId;
       }
 
-      return new FragmentEditEventBinding((ConstraintLayout) rootView, date, getEvent, save);
+      id = R.id.time;
+      Button time = ViewBindings.findChildViewById(rootView, id);
+      if (time == null) {
+        break missingId;
+      }
+
+      return new FragmentEditEventBinding((ConstraintLayout) rootView, date, getEvent, save, time);
     }
     String missingId = rootView.getResources().getResourceName(id);
     throw new NullPointerException("Missing required view with ID: ".concat(missingId));

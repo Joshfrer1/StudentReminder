@@ -14,6 +14,8 @@ import com.example.studentreminder.databinding.FragmentEditEventBinding;
 import com.example.studentreminder.viewmodels.ToDoViewModel;
 import com.google.android.material.datepicker.MaterialDatePicker;
 import com.google.android.material.datepicker.MaterialPickerOnPositiveButtonClickListener;
+import com.google.android.material.timepicker.MaterialTimePicker;
+import com.google.android.material.timepicker.TimeFormat;
 
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
@@ -35,10 +37,19 @@ public class EditEventFragment extends Fragment {
         });
         binding.date.setOnClickListener(view -> {
             MaterialDatePicker<Long> datePicker = MaterialDatePicker.Builder.datePicker()
-                    .setTitleText("Select Date")
+                    .setTitleText("Select Reminder Date")
                     .setSelection(MaterialDatePicker.todayInUtcMilliseconds())
                     .build();
-            datePicker.show(requireActivity().getSupportFragmentManager(), "tag");
+            datePicker.show(requireActivity().getSupportFragmentManager(), "date");
+        });
+        binding.time.setOnClickListener(view -> {
+           MaterialTimePicker timePicker = new MaterialTimePicker.Builder()
+                   .setTimeFormat(TimeFormat.CLOCK_12H)
+                   .setHour(12)
+                   .setMinute(00)
+                   .setTitleText("Select Reminder Time")
+                   .build();
+           timePicker.show(requireActivity().getSupportFragmentManager(), "time");
         });
 
         return binding.getRoot();

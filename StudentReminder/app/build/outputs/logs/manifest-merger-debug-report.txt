@@ -6,6 +6,7 @@ INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentRemind
 INJECTED from C:\Users\joshf\AndroidStudioProjects\StudentReminder\StudentReminder\StudentReminder\app\src\main\AndroidManifest.xml:2:1-24:12
 MERGED from [androidx.databinding:databinding-adapters:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\804f5cef2c8055f0399a1981ab0eea6e\transformed\databinding-adapters-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.databinding:databinding-runtime:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\0c04245b2da26fe59610149e702f545f\transformed\databinding-runtime-7.0.3\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\joshf\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\joshf\.gradle\caches\transforms-3\763fcd2e0284e5e571bdcc51d674f4ec\transformed\constraintlayout-2.1.1\AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.3.1] C:\Users\joshf\.gradle\caches\transforms-3\43711b72eaf2f529e5b9b1576380fb27\transformed\appcompat-1.3.1\AndroidManifest.xml:17:1-24:12
@@ -36,8 +37,6 @@ MERGED from [androidx.customview:customview:1.1.0] C:\Users\joshf\.gradle\caches
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\5b2b00e982f1215a847329e9d903a511\transformed\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\76ce4b0e4d2e7286e97250b1cf6504f3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.5.0] C:\Users\joshf\.gradle\caches\transforms-3\97e7ec19bd11dff7ae3d399ac9d0fa5b\transformed\core-1.5.0\AndroidManifest.xml:17:1-26:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\joshf\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
-MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\joshf\.gradle\caches\transforms-3\47e5272538e67774132afc2512bda737\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\58c33f79541fa64793747c2f03ce017d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.savedstate:savedstate:1.1.0] C:\Users\joshf\.gradle\caches\transforms-3\940f6159f5551d04c5900cf56e10f7a6\transformed\jetified-savedstate-1.1.0\AndroidManifest.xml:17:1-24:12
@@ -46,6 +45,7 @@ MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.4.0] C:\Users\joshf\.g
 MERGED from [androidx.arch.core:core-runtime:2.1.0] C:\Users\joshf\.gradle\caches\transforms-3\72de0627c0c71c2c0ac6e20b5aa28ba3\transformed\core-runtime-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\joshf\.gradle\caches\transforms-3\5af3675663ee80459ccf909a4eb590a2\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\joshf\.gradle\caches\transforms-3\c435e72dd0e5456954cb4337e8ac078f\transformed\sqlite-2.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\joshf\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\7a6baf161ab5d6c31b6f6f5d94e198cf\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\5dc1b0d68d5be8d395af6b357c3240c1\transformed\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\eb3bd80f829817dc46cef00554f9b4ab\transformed\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -123,6 +123,8 @@ MERGED from [androidx.databinding:databinding-adapters:7.0.3] C:\Users\joshf\.gr
 MERGED from [androidx.databinding:databinding-adapters:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\804f5cef2c8055f0399a1981ab0eea6e\transformed\databinding-adapters-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:databinding-runtime:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\0c04245b2da26fe59610149e702f545f\transformed\databinding-runtime-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.databinding:databinding-runtime:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\0c04245b2da26fe59610149e702f545f\transformed\databinding-runtime-7.0.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
+MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\joshf\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.material:material:1.4.0] C:\Users\joshf\.gradle\caches\transforms-3\f794c157ce27c216c504b2261e60ef5d\transformed\material-1.4.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.1] C:\Users\joshf\.gradle\caches\transforms-3\763fcd2e0284e5e571bdcc51d674f4ec\transformed\constraintlayout-2.1.1\AndroidManifest.xml:5:5-7:41
@@ -183,10 +185,6 @@ MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\jo
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\76ce4b0e4d2e7286e97250b1cf6504f3\transformed\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.5.0] C:\Users\joshf\.gradle\caches\transforms-3\97e7ec19bd11dff7ae3d399ac9d0fa5b\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.core:core:1.5.0] C:\Users\joshf\.gradle\caches\transforms-3\97e7ec19bd11dff7ae3d399ac9d0fa5b\transformed\core-1.5.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\joshf\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\joshf\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
-MERGED from [androidx.databinding:viewbinding:7.0.3] C:\Users\joshf\.gradle\caches\transforms-3\aedac3ef7d5f2c617ead8656bf92c449\transformed\jetified-viewbinding-7.0.3\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\joshf\.gradle\caches\transforms-3\47e5272538e67774132afc2512bda737\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.3.1] C:\Users\joshf\.gradle\caches\transforms-3\47e5272538e67774132afc2512bda737\transformed\lifecycle-runtime-2.3.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\58c33f79541fa64793747c2f03ce017d\transformed\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
@@ -203,6 +201,8 @@ MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\joshf\.gradle\cach
 MERGED from [androidx.sqlite:sqlite-framework:2.1.0] C:\Users\joshf\.gradle\caches\transforms-3\5af3675663ee80459ccf909a4eb590a2\transformed\sqlite-framework-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\joshf\.gradle\caches\transforms-3\c435e72dd0e5456954cb4337e8ac078f\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.sqlite:sqlite:2.1.0] C:\Users\joshf\.gradle\caches\transforms-3\c435e72dd0e5456954cb4337e8ac078f\transformed\sqlite-2.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\joshf\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\joshf\.gradle\caches\transforms-3\d88cacb3ad7019752e911e94c62f5798\transformed\versionedparcelable-1.1.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\7a6baf161ab5d6c31b6f6f5d94e198cf\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.tracing:tracing:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\7a6baf161ab5d6c31b6f6f5d94e198cf\transformed\jetified-tracing-1.0.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\joshf\.gradle\caches\transforms-3\5dc1b0d68d5be8d395af6b357c3240c1\transformed\documentfile-1.0.0\AndroidManifest.xml:20:5-44
